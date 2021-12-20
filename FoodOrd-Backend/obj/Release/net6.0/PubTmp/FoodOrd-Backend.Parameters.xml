@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="IIS Web Application Name" description="" value="FoodOrd-Backend20211220023942" tags="IisApp">
+    <parameterEntry kind="ProviderPath" scope="IisApp" match="^C:\\Users\\Hovo\\source\\repos\\FoodOrd-Backend\\FoodOrd-Backend\\obj\\Release\\net6\.0\\PubTmp\\Out\\$" />
+  </parameter>
+  <parameter name="FoodOrd_Backend.Models.ProductContext" description="" value="Data Source=tcp:foodord-backenddbserver.database.windows.net,1433;Initial Catalog=FoodOrd-Backend_db;User Id=hovo27@foodord-backenddbserver;Password=Hovo1234" tags="dbfullsql">
+    <parameterEntry kind="ProviderPath" scope="dbfullsql" match="^C:\\Users\\Hovo\\source\\repos\\FoodOrd-Backend\\FoodOrd-Backend\\obj\\Release\\net6\.0\\PubTmp\\EFSQLScripts\\FoodOrd_Backend\.Models\.ProductContext\.sql$" />
+  </parameter>
+  <parameter name="FoodOrd_Backend.Models.UserContext" description="" value="Data Source=tcp:foodord-backenddbserver.database.windows.net,1433;Initial Catalog=FoodOrd-Backend_db;User Id=hovo27@foodord-backenddbserver;Password=Hovo1234" tags="dbfullsql">
+    <parameterEntry kind="ProviderPath" scope="dbfullsql" match="^C:\\Users\\Hovo\\source\\repos\\FoodOrd-Backend\\FoodOrd-Backend\\obj\\Release\\net6\.0\\PubTmp\\EFSQLScripts\\FoodOrd_Backend\.Models\.UserContext\.sql$" />
+  </parameter>
+</parameters>

@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<sitemanifest>
+  <IisApp path="C:\Users\Hovo\source\repos\FoodOrd-Backend\FoodOrd-Backend\obj\Release\net6.0\PubTmp\Out\" />
+  <dbfullsql path="C:\Users\Hovo\source\repos\FoodOrd-Backend\FoodOrd-Backend\obj\Release\net6.0\PubTmp\EFSQLScripts\FoodOrd_Backend.Models.ProductContext.sql" />
+  <dbfullsql path="C:\Users\Hovo\source\repos\FoodOrd-Backend\FoodOrd-Backend\obj\Release\net6.0\PubTmp\EFSQLScripts\FoodOrd_Backend.Models.UserContext.sql" />
+</sitemanifest>

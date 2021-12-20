@@ -1,0 +1,29 @@
+<form [formGroup]="registerForm" (ngSubmit)="handlerRegisterForm()">
+  <small class="form-text text-danger">{{success}}</small>
+  <div class="form-group">
+    <label>Name</label>
+    <input type="text" class="form-control" name = "name" placeholder="Enter Name" formControlName="name">
+    <small *ngIf="name && name.errors?.required && name.touched" class="form-text text-danger">Name is required</small>
+  </div>
+  <div class="form-group">
+    <label>Email address</label>
+    <input type="email" class="form-control" name = "email" placeholder="Enter email" formControlName="email">
+    <small *ngIf="email && email.errors?.required && email.touched" class="form-text text-danger">Email is required</small>
+    <small *ngIf="email && email.errors?.email" class="form-text text-danger">Enter valid email</small>
+  </div>
+  <div class="form-group">
+    <label>Password</label>
+    <input type="password" class="form-control" name = "password" placeholder="Enter Password" formControlName="password">
+    <small *ngIf="password && password.errors?.required && password.touched" class="form-text text-danger">Password is required</small>
+    <small *ngIf="password && password.errors?.minlength" class="form-text text-danger">Password needs to be atleast 6 characters long</small>
+  </div>
+  <div class="form-group">
+    <label>Confirm Password</label>
+    <input type="password" class="form-control" name = "confirmPassword" placeholder="Enter Password" formControlName="confirmPassword">
+    <small *ngIf="confirmPassword && confirmPassword.errors?.required && confirmPassword.touched" class="form-text text-danger">Confirm Password is required</small>
+    <small *ngIf="registerForm && confirmPassword && registerForm.errors && registerForm.errors.compare && confirmPassword.touched && !confirmPassword.errors?.required" class="form-text text-danger">Password Doesnt Match</small>
+  </div>
+  <br>
+  <button type="submit" class="btn btn-primary" [disabled]="registerForm.invalid">Submit</button>
+
+

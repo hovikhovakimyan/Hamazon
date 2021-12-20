@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAvzz0sh8XX06xPDSWpYiphwAAAAACAAAAAAAQZgAAAAEAACAAAADFLyPd79gRktsV4CaOqCn6nmLVOnKNkdOn1mprp7bloAAAAAAOgAAAAAIAACAAAAAntz/i9+z9eidY5/Lkr1PH2ESjbZhUyy2CmnhekB35VoAAAACl6GxMYeCGU5lADZeF2SNeGt8rz7GjniCsYSEonKjpiBDftoQh0uz4FFX69FUHrzRWUxKV1QdG5epuKrWmglhY1xbNbYgkk53LZP774SgHKEDrzIChLFsMY+7g6UakpoWAk6bv9MgBY+cz4FbSwIPn40l/TqG6JQ0/EEx1OX6/6UAAAAAKLXrVfqbYTQvh3953D3WjGoT+6b646cZLPvKPVrCXMGpXacf2Y1ih9oBgCO7NmSvNEcLHp9VXAzBQaxCAndde</EncryptedPassword>
+    <History>True|2021-12-20T22:43:23.5499008Z;True|2021-12-20T14:40:17.1063645-08:00;True|2021-12-20T03:56:17.2970360-08:00;True|2021-12-20T03:37:24.4085127-08:00;False|2021-12-20T03:36:40.1762909-08:00;True|2021-12-20T03:16:37.1468459-08:00;True|2021-12-20T03:10:10.0152486-08:00;True|2021-12-20T03:07:03.8660142-08:00;True|2021-12-20T03:03:37.7676450-08:00;True|2021-12-20T02:52:26.9566249-08:00;</History>
+  </PropertyGroup>
+  <ItemGroup>
+    <EFMigrations Include="FoodOrd_Backend.Models.ProductContext">
+      <Value>Data Source=tcp:foodord-backenddbserver.database.windows.net,1433%3bInitial Catalog=FoodOrd-Backend_db%3bUser Id=hovo27%40foodord-backenddbserver%3bPassword=Hovo1234</Value>
+    </EFMigrations>
+    <EFMigrations Include="FoodOrd_Backend.Models.UserContext">
+      <Value>Data Source=tcp:foodord-backenddbserver.database.windows.net,1433%3bInitial Catalog=FoodOrd-Backend_db%3bUser Id=hovo27%40foodord-backenddbserver%3bPassword=Hovo1234</Value>
+    </EFMigrations>
+  </ItemGroup>
+</Project>

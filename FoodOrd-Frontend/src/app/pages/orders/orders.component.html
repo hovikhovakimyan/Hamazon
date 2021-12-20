@@ -1,0 +1,10 @@
+<food-homepage-header></food-homepage-header>
+<div *ngFor="let order of orders; index as i" class="card text-dark bg-light mb-3 center" style="max-width: 18rem;">
+    <div class="card-header">Order Details</div>
+    <div class="card-body">
+      <h5 class="card-title">Status: {{order.status}}</h5>
+      <p class="card-text">Remaining time: {{order.timeLeft}}</p>
+      <p class = "card-text">Order ID: {{order.orderId}}</p>
+      <button type="button" class="btn btn-outline-danger" (click)="removeOrder(i)">Cancel Order</button>
+    </div>
+  </div>

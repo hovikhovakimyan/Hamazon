@@ -1,0 +1,17 @@
+.card {
+    margin: 0 auto; /* Added */
+    float: none; /* Added */
+    margin-bottom: 10px; /* Added */
+}
+.search{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.card-body{
+    margin: 0 auto; /* Added */
+    float: none; /* Added */
+    margin-bottom: 10px; /* Added */
+}
+.center {
+    text-align: center;
+  }

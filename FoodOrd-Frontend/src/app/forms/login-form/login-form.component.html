@@ -1,0 +1,20 @@
+<div class="container">
+  <form [formGroup]="loginForm" (ngSubmit)="handlerLoginForm()">
+      <div class="form-group">
+          <small *ngIf="success==='Incorrect Email or Password'" class="form-text text-danger">Invalid Username or Password</small>
+          <br>
+        <label>Email address</label>
+        <input type="email" class="form-control" name = "email" placeholder="Enter email" formControlName="email">
+        <small *ngIf="email && email.errors?.required && email.touched" class="form-text text-danger">Email is required</small>
+        <small *ngIf="email && email.errors?.email" class="form-text text-danger">Enter valid email</small>
+      </div>
+      <div class="form-group">
+        <label>Password</label>
+        <input type="password" class="form-control" name = "password" placeholder="Enter Password" formControlName="password">
+        <small *ngIf="password && password.errors?.required && password.touched" class="form-text text-danger">Password is required</small>
+        <small *ngIf="password && password.errors?.minlength" class="form-text text-danger">Password needs to be atleast 6 characters long</small>
+      </div>
+      <br>
+      <button type="submit" class="btn btn-primary" [disabled]="loginForm.invalid">Submit</button>
+  </form>
+</div>
